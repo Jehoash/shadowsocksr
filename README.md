@@ -103,3 +103,11 @@ Bugs and Issues
 [Travis CI]:         https://travis-ci.org/shadowsocksr/shadowsocksr
 [Windows]:           https://github.com/shadowsocksr/shadowsocksr-csharp
 [Wiki]:              https://github.com/breakwa11/shadowsocks-rss/wiki
+Chinese:
+1. 进入刚才clone下来的文件夹， 有一个文件 user-config.json ，这个就是配置文件的模板，我们可以复制一份到/etc/shadowsocks.json，然后对这个文件进行配置
+2. 进入到shadowsocksr/shadowsocks/目录里面，执行：python local.py -c /etc/shadowsocks.json
+3. 出现下面的提示,说明运行成功
+2017-10-17 12:30:49 INFO     local.py:50 local start with protocol[auth_chain_a] password [Ck6295iFwq] method [none] obfs                                [tls1.2_ticket_auth] obfs_param []
+2017-10-17 12:30:49 INFO     local.py:54 starting local at 127.0.0.1:1080
+2017-10-17 12:30:49 INFO     asyncdns.py:324 dns server: [('127.0.1.1', 53)]
+2017-10-17 12:30:57 INFO     util.py:85 loading libcrypto from libcrypto.so.1.0.0
